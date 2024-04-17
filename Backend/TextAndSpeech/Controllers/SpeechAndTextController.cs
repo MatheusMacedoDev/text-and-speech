@@ -13,7 +13,7 @@ namespace TextAndSpeech.Controllers
         private string speechKey = "d3a2da1743b5452f86af5de95aab4bad";
         private string speechRegion = "eastus";
 
-        [HttpGet("SpeechToText")]
+        [HttpPost("SpeechToText")]
         public async Task<IActionResult> SpeechToText(IFormFile? file)
         {
             try
